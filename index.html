@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessWhat - بازی حدس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GuessWhat</h1>
+        <button id="theme-switcher">تغییر تم</button>
+    </header>
+
+    <main>
+        <div id="menu">
+            <h2>یک بازی را انتخاب کنید:</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-game="plaque">پلاک</button>
+                <button class="tab-button" data-game="flag">پرچم</button>
+            </div>
+            <div id="plaque-options" class="game-options active">
+                <h3>حالت بازی پلاک را انتخاب کنید:</h3>
+                <button class="mode-button" data-mode="number-to-city">حدس شهر از روی شماره</button>
+                <button class="mode-button" data-mode="char-to-city">حدس شهر از روی حروف</button>
+            </div>
+        </div>
+
+        <div id="game-container" class="hidden">
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="image-container"></div>
+            </div>
+            <div id="options-container"></div>
+            <p id="result"></p>
+            <button id="next-question" class="hidden">سوال بعدی</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>ساخته شده توسط GeekNeuron</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
